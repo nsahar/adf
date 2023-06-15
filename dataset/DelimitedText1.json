@@ -1,0 +1,53 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "03_TCKHVCDLITEM_ITEM Condition_Codes_May22022.csv",
+				"folderPath": "LandingZone",
+				"fileSystem": "data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ITEMNUM",
+				"type": "String"
+			},
+			{
+				"name": "ITEMSETID",
+				"type": "String"
+			},
+			{
+				"name": "CONDCODE_CONDITIONCODE",
+				"type": "String"
+			},
+			{
+				"name": "CONDCODE_DESCRIPTION",
+				"type": "String"
+			},
+			{
+				"name": "CONDCODE_CONDRATE",
+				"type": "String"
+			},
+			{
+				"name": "CONDITIONENABLED",
+				"type": "String"
+			},
+			{
+				"name": "CONDCODE_TCKDEFAULT",
+				"type": "String"
+			}
+		]
+	}
+}
